@@ -1,0 +1,17 @@
+answer = input("Would you like to play? (yes/no)")
+if answer == "yes":
+    answer = input("The coronavirus has disrupted daily life as we know it. As society begins to open up again, it is up to you to help curve the spread of the coronavirus. To do this, you must follow social distancing guidelines to redue your chances of getting the coronavirus. Do you want to leave your house? (yes/no)")
+    if answer == "yes":
+        answer = input("Awesome! Will you be taking a face mask? (yes/no)")
+        if answer == "yes":
+            answer = input("Great! You decided to leave the house because you were running low on groceries. You drive to the grocery store, park, and grab a shopping cart. Would you like to do something to the shopping cart? (yes/no)")
+            if answer == "yes":
+                answer = input("Okay! You grab a disinfectant wipe and clean your cart before going into the grocery store.")
+        elif answer == "no":
+            answer = input("Okay, but be sure to check your state's guidelines to make sure this is acceptable. You decide to leave your house because you were running low on groceries. You drive to the grocery store, park, and grab a shopping cart. Woudl you like to do something to the shopping cart? (yes/no)")
+            if answer == "yes":
+                answer = input("")
+    else:
+        print("Good for you! There's no risk of getting the coronavirus if you're at home! You win! Retry to see if you'd survive by leaving your house!")
+else:
+    print("That's too bad! Maybe next time!")
