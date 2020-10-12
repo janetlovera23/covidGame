@@ -1,16 +1,36 @@
-answer = input("Would you like to play? (yes/no)")
+answer = input("Would you like to play? (yes/no) ")
 if answer == "yes":
-    answer = input("The coronavirus has disrupted daily life as we know it. As society begins to open up again, it is up to you to help curve the spread of the coronavirus. To do this, you must follow social distancing guidelines to redue your chances of getting the coronavirus. Do you want to leave your house? (yes/no)")
+    answer = input("The coronavirus has disrupted daily life as we know it. As society begins to open up again, it is up to you to help curve the spread of the coronavirus. To do this, you must follow social distancing guidelines to redue your chances of getting the coronavirus. Do you want to leave your house? (yes/no) ")
     if answer == "yes":
-        answer = input("Awesome! Will you be taking a face mask? (yes/no)")
+        answer = input("Awesome! Will you be taking a face mask? (yes/no) ")
         if answer == "yes":
-            answer = input("Great! You decided to leave the house because you were running low on groceries. You drive to the grocery store, park, and grab a shopping cart. Would you like to do something to the shopping cart? (yes/no)")
+            answer = input("Great! You decided to leave the house because you were running low on groceries. You drive to the grocery store, park, and grab a shopping cart. Would you like to do something to the shopping cart? (yes/no) ")
             if answer == "yes":
-                answer = input("Okay! You grab a disinfectant wipe and clean your cart before going into the grocery store.")
+                answer = input("Okay! You grab a disinfectant wipe and clean your cart before going into the grocery store. As you are inspecting a box of cereal, you sneeze. Do you touch your face? (yes/no) ")
+                if answer == "yes":
+                    print("Oh no! Before touching your face you should use hand sanitizer or wash your hands to avoid possible germs from touching objects in the store. Your chances of getting the coronavirus have highly increased. Please try again, play another game, or read the resources listed on the webpage. Thank you!")
+                elif answer == "no":
+                    answer = input("Cool! You keep shopping, and as you turn into the fruit section you run into an old friend. They are wearing a facemask, but start up a conversation about being skeptical about the virus. They try to hug you before leaving, do you let them? (yes/no) ")
+                    if answer == "yes":
+                        print("Physically touching others outside of those who live with you is strongly discouraged. Choosing to hug your friend has increased your risk of getting the coronavirus. Please try again, play another game, or read the resources listed on the webpage. Thank you!")
+                    elif answer == "no":
+                        answer = input("Nice choice! You're done shopping and head over to the checkout line. The people in front of you are ignoring the 6-ft place markers on the floor. Do you ignore them too? (yes/no) ")
+                        if answer == "yes":
+                            print("It is strongly recommended you stay 6-ft from others to avoid catching the coronavirus. The markers commonly found in public places are for your health and safety, your chances of getting the coronavirus has increased significantly. Please try again, play another game, or read the resources listed on the webpage. Thank you!")
+                        elif answer == "no":
+                            answer = input("Super! After paying, you drive home. Do you do anything before putting groceries away? (yes/no) ")
+                            if answer == "yes":
+                                answer = input("After taking off your face mask and washing your hands, you put away all of your groceries. Ahh, nice to be home again! Do you do anything else before relaxing? (yes/no) ")
+                                if answer == "yes":
+                                    print("You wash your hands one more time for good measure. Congratulations, you completed a safe and successful trip! You have followed all the recommended measures for staying safe against the coronavirus. You are a responsible human being, good job! Play again, another game, or check out the resources on the webpage. Thank you!")
+                                elif answer == "no":
+                                    print("You don't wash your hands again. Probably should have, but you've completed your trip to the grocery store! Your chances of getting coronavirus are less than other choices, but you are still at risk. Next time, take all approriate measures to stay safe! Play again, another game, or check out the resources on the webpage. Thank you!")
+                            elif answer == "no":
+                                print("It is highly recommended you wash your hands when you arrive home to avoid spreading germs within your house. By not washing your hands, your chances of getting the coronavirus has increased significantly. Please try again, play another game, or read the resources listed on the webpage. Thank you!")
+            elif answer == "no":
+                print("You've decided not to wipe your shopping cart before using it. Wiping your cart is recommended because you don't know if the person who use it before you had the coronavirus. You have a high chance of getting the coronavirus, you are not ready to go out into society. Please try again, play another game, or look at the resources on our page. Thank you!")
         elif answer == "no":
-            answer = input("Okay, but be sure to check your state's guidelines to make sure this is acceptable. You decide to leave your house because you were running low on groceries. You drive to the grocery store, park, and grab a shopping cart. Woudl you like to do something to the shopping cart? (yes/no)")
-            if answer == "yes":
-                answer = input("")
+            print("That is your personal choice, but make sure your state's guidelines allow you to do so. Not wearing a face mask highly increases your chances of getting coronavirus, get tested if symptoms begin to develop. You are not prepared to go out into society. Please try again, play another game, or look through the resources available on our webpage. Thank you! ")
     else:
         print("Good for you! There's no risk of getting the coronavirus if you're at home! You win! Retry to see if you'd survive by leaving your house!")
 else:
